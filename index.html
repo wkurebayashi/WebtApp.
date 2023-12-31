@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>WebtApp.</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    html {
+        height: 100%;
+    }
+    body {
+        height: 100%;
+        position: relative;
+        min-width: 200px;  /* 中央配置する要素の横幅 */
+        min-height: 200px;  /* 中央配置する要素の縦幅 */
+    }
+    #display {
+        position: absolute;
+        margin-top: -150px; /* 中央配置する要素の横幅の半分だけ上にずらす */
+        margin-left: -300px; /* 中央配置する要素の縦幅の半分だけ左にずらす */
+        top: 50%;  /* 要素の上端を中央に */
+        left: 50%;  /* 要素の左端を中央に */
+        width: 600px;
+        height: 300px;
+        text-align: center;
+    }
+</style>
+ 
+<body>
+    <div id="display">
+        <h2>「テンポ感」診断テスト</h2>
+        <p>&nbsp;</p>
+        <p>このテストでは、一定のテンポでタッピングを続けてもらい、</p>
+        <p>なるべく最初のテンポを維持することに取り組んでもらいます。</p>
+        <p>&nbsp;</p>
+        <p>このテストの結果は、個人が特定できないような処理を施した上で、</p>
+        <p>研究・教育目的で使用させていただきますこと、ご了承ください。</p>
+        <p>&nbsp;</p>
+        <button id="next">了承してテストを開始する</button>
+    </div>
+</body>
+</html>
