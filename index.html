@@ -2,44 +2,60 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>WebtApp.</title>
 </head>
 <style>
-    * {
-        padding: 0;
-        margin: 0;
-    }
     html {
         height: 100%;
+        padding: 0;
     }
     body {
         height: 100%;
         position: relative;
-        min-width: 200px;  /* 中央配置する要素の横幅 */
-        min-height: 200px;  /* 中央配置する要素の縦幅 */
+        padding: 0;
     }
     #display {
         position: absolute;
-        margin-top: -150px; /* 中央配置する要素の横幅の半分だけ上にずらす */
-        margin-left: -300px; /* 中央配置する要素の縦幅の半分だけ左にずらす */
-        top: 50%;  /* 要素の上端を中央に */
-        left: 50%;  /* 要素の左端を中央に */
+        margin-top: -300px;
+        margin-left: -300px;
+        top: 50%;
+        left: 50%;
+        height: 600px;
         width: 600px;
-        height: 300px;
-        text-align: center;
+        text-align: left;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 20px;
+        width: 100%;
+    }
+    button {
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 600px){
+        #display {
+            position: absolute;
+            margin: 10px;
+            top: 0%;
+            left: 0%;
+            height: 100%;
+            width: 100%;
+            text-align: left;
+        }
     }
 </style>
+ 
 <body>
     <div id="display">
-        <h2>「テンポ感」診断テスト</h2>
-        <p>&nbsp;</p>
-        <p>このテストでは、一定のテンポでタッピングを続けてもらい、</p>
-        <p>なるべく最初のテンポを維持することに取り組んでもらいます。</p>
-        <p>&nbsp;</p>
-        <p>このテストの結果は、個人が特定できないような処理を施した上で、</p>
-        <p>研究・教育目的で使用させていただきますこと、ご了承ください。</p>
-        <p>&nbsp;</p>
-        <button id="next">了承してテストを開始する</button>
+        <h1>「テンポ感」診断テスト</h1>
+        <p>このテストでは、お持ちのデバイス上で一定のテンポでタップを繰り返してもらいながら、なるべく最初のテンポを維持するという課題に取り組んでいただきます。</p>
+        <p>このテストを通して取得されるデータは、個人が特定できないようにする匿名加工の処理を施した上で、研究・教育目的で使用させていただきますこと、ご承諾ください。</p>
+        <p>連絡先: wkure@hirosaki-u.ac.jp (弘前大学理工学部 紅林 亘)</p>
+        <button id="next">承諾してテストを開始する</button>
     </div>
 </body>
 </html>
